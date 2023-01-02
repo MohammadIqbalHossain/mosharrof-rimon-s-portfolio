@@ -12,6 +12,7 @@ import people3 from '../assets/app__people-3.jpg';
 import people4 from '../assets/app__people-4.jpg';
 import wordpress from '../assets/app__wordpress.png';
 import roundedImg from '../assets/app__rounded-image.jpg';
+import zigzag from '../assets/zigzag-line.gif';
 
 
 export default {
@@ -28,5 +29,6 @@ export default {
     people3,
     people4,
     wordpress,
-    roundedImg
+    roundedImg,
+    zigzag
 }
