@@ -63,7 +63,8 @@ export default function Header() {
            <img src={images.roundedImg} alt="" />
         </div>
       </div>
-
+      
+      <hr className="line"/>
     </div>
   )
 }
