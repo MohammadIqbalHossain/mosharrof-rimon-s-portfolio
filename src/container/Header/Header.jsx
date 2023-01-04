@@ -45,6 +45,7 @@ export default function Header() {
         <div className="tags-container">
           <div className="tags-1"><span>*</span></div>
           <div className="tags-2"><span>Web desiner</span></div>
+          <br />
           <div className="tags-3"><span>Web developer</span></div>
           <div className="tags-4"><span>Content writer</span></div>
           <div className="tags-5"><span>UI Designer</span></div>
