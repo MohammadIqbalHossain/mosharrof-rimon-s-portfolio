@@ -41,20 +41,25 @@ export default function Header() {
       </div>
 
 
-      <div className="tags-container">
-        <div>
-            <div className="tags">*</div>
-            <div className="tags">Web desiner</div>
-            <div className="tags">Web developer</div>
-            <div className="tags">Content writer</div>
+      <div className="app__header-sContainer">
+        <div className="tags-container">
+          <div className="tags-1"><span>*</span></div>
+          <div className="tags-2"><span>Web desiner</span></div>
+          <div className="tags-3"><span>Web developer</span></div>
+          <div className="tags-4"><span>Content writer</span></div>
+          <div className="tags-5"><span>UI Designer</span></div>
+          <div className="tags-6"><span>Shopify expert</span></div>
         </div>
 
-        <div>
-
+        <div className="contact-info">
+          <span>*HIRE ME!</span>
+          <h1>Korea, Busan
+            hi@domainexample.com
+            +850 123 4567 890</h1>
         </div>
 
-        <div>
-
+        <div className="rounded-img">
+           <img src={images.roundedImg} alt="" />
         </div>
       </div>
 
