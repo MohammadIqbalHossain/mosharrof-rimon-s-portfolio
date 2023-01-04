@@ -40,12 +40,16 @@ export default function Advantages() {
 
       <h1>Advantages</h1>
 
-      {advantageObj.map((item, index) =>
-        <div key={index} className="advItems">
-            <h1>{item.title}</h1>
-            <img src={item.img} alt="" />
-        </div>
-      )}
+      <div className="advContainer">
+        {advantageObj.map((item, index) =>
+          <div key={index} className="advItems">
+            <h1>{item.title}
+              <img src={item.img} alt="" />
+            </h1>
+
+          </div>
+        )}
+      </div>
 
     </div>
   )
