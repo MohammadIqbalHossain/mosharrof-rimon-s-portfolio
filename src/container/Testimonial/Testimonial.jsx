@@ -1,7 +1,7 @@
 import React from 'react'
 import './Testimonial.scss';
 
-import { Swiper, } from 'swiper';
+import { Swiper } from "swiper";
 
 // Import Swiper styles
 import 'swiper/css';

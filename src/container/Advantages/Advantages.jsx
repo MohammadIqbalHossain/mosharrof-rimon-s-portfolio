@@ -31,10 +31,7 @@ export default function Advantages() {
       img: images.htmlIcon
     }
   ]
-  // const html = images.htmlIcon;
-  // const elementor = images.elementor;
-  // const wordpress = images.wordpress;
-  // const advImg = [html, elementor, wordpress]
+
   return (
     <div>
 
@@ -46,7 +43,6 @@ export default function Advantages() {
             <h1>{item.title}
               <img src={item.img} alt="" />
             </h1>
-
           </div>
         )}
       </div>
