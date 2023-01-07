@@ -1,28 +1,7 @@
 import React from 'react'
 import './Testimonial.scss';
 
-import { Swiper } from "swiper";
-
-
-// Import Swiper styles
-import 'swiper/css';
-
 function Testimonial() {
-  var swiper = new Swiper('.blog-slider', {
-    spaceBetween: 30,
-    effect: 'fade',
-    loop: true,
-    mousewheel: {
-      invert: false,
-    },
-    // autoHeight: true,
-    pagination: {
-      el: '.blog-slider__pagination',
-      clickable: true,
-    }
-  });
-
-
   return (
     <div class="header">
       <div class="container">
