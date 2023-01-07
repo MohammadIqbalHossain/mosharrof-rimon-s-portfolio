@@ -26,6 +26,7 @@ function App() {
       <Work />
       <Testimonial />
       <Footer />
+      <Navbar />
     </div>
   );
 }

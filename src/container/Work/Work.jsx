@@ -9,18 +9,18 @@ function Work() {
         Sorry, your browser does not support CSS Grid. 😅
       </div>
       <section class="section">
-        <h1>Nom Nom Gallery</h1>
+        <h1>Please visit my projects</h1>
         <div class="grid">
           <div class="item">
-            <div class="item__details">
-              jelly-o brownie sweet
-            </div>
+            <a href="https://moskbite.com/products/children-double-bed-bunk-sleeper" target="_blank" class="item__details">
+              Moskbite Shop
+            </a>
           </div>
-          <div class="item item--large">
-            <div class="item__details">
-              Muffin jelly gingerbread
-            </div>
-          </div>
+          <a href="https://moskbite.com/products/children-double-bed-bunk-sleeper" target="_blank" class="item item--large">
+            <span class="item__details">
+              Moskbite shop
+            </span>
+          </a>
           <div class="item item--medium">
             <div class="item__details">
               sesame snaps chocolate

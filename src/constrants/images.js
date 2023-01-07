@@ -13,6 +13,10 @@ import people4 from '../assets/app__people-4.jpg';
 import wordpress from '../assets/app__wordpress.png';
 import roundedImg from '../assets/app__rounded-image.jpg';
 import zigzag from '../assets/zigzag-line.gif';
+import shofipy from '../assets/shopify-logo.png';
+import ebay from '../assets/evay.png';
+import css from '../assets/css.png';
+import js from '../assets/js.png';
 
 
 export default {
@@ -30,5 +34,9 @@ export default {
     people4,
     wordpress,
     roundedImg,
-    zigzag
+    zigzag,
+    shofipy,
+    ebay,
+    css,
+    js
 }

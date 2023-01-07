@@ -2,33 +2,34 @@ import React from 'react'
 import './Advantages.scss';
 
 import { images } from '../../constrants/index';
+import { FaEbay } from 'react-icons/fa';
 
 
 export default function Advantages() {
   const advantageObj = [
     {
-      title: "Figma",
+      title: "HTML",
       img: images.htmlIcon
     },
     {
-      title: "Figma",
-      img: images.htmlIcon
+      title: "Wordpress",
+      img: images.wordpress
     },
     {
-      title: "Figma",
-      img: images.htmlIcon
+      title: "Elementor",
+      img: images.elementor
     },
     {
-      title: "Figma",
-      img: images.htmlIcon
+      title: "Ebay",
+      img: images.ebay
     },
     {
-      title: "Figma",
-      img: images.htmlIcon
+      title: "JavaScript",
+      img: images.js
     },
     {
-      title: "Figma",
-      img: images.htmlIcon
+      title: "CSS",
+      img: images.css
     }
   ]
 
