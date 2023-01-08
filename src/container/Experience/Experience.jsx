@@ -33,7 +33,7 @@ export default function Experience() {
 
   return (
     <div>
-         <h1>Education & Experience</h1>
+      <h1 className="expTitle">Education & Experience</h1>
       {expData.map((item, index) =>
         <div>
           <div key={index} className="expContainer">
@@ -45,7 +45,7 @@ export default function Experience() {
               <span>{item.institute}</span>
             </div>
           </div>
-          <hr className="hr-line"/>
+          <hr className="hr-line" />
         </div>
 
       )}

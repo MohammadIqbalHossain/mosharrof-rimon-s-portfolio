@@ -4,7 +4,7 @@ import feature2 from '../assets/app__feature-2jpg.jpg';
 import feature3 from '../assets/app__feature-3.jpg';
 import footerImg from '../assets/app__footer-img.jpg';
 import htmlIcon from '../assets/app__html.png';
-import owner from '../assets/app__owner-image.jpg';
+import owner from '../assets/app__owener-image.jpeg';
 import logo from '../assets/app__logo.png';
 import people1 from '../assets/app__people-1.jpg';
 import people2 from '../assets/app__people-2.jpg';

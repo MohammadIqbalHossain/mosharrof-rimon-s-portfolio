@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo');
 
-body,
-html {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: #f5f4f4;
-  font-size: 13px;
-  font-family: 'Arvo', monospace;
+// body,
+// html {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   background: #f5f4f4;
+//   font-size: 13px;
+//   font-family: 'Arvo', monospace;
   
-  @supports(display: grid) {
-    display: block;
-  }
-}
+//   @supports(display: grid) {
+//     display: block;
+//   }
+// }
 
 .message {
   border: 1px solid #d2d0d0;

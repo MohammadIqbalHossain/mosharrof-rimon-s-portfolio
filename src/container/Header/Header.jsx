@@ -10,11 +10,11 @@ export default function Header() {
 
       <div className="app__header-container">
         <div className="app__header-content">
-          <h1>Illustrator &<br />  Visual <br /> Designer</h1>
+          <h1>Evay &<br />  Shopify <br /> Expert</h1>
           <img src={images.zigzag} alt="zigzagImage" />
           <div className="app__owner-experiance">
             <div>
-              <h1>6</h1>
+              <h1>3</h1>
               <p>YEARS OF <br />
                 EXPERIENCE</p>
             </div>
@@ -32,7 +32,7 @@ export default function Header() {
 
         <div className="app__header-rContent">
           <div>*</div>
-          <p>I’m Ferdian, an Illustrator & Visual Designer based in Korea. I'm making product and design minimal modern</p>
+          <p>I’m Rimon, an Evay & Shopify web Designer based in Bangladesh. I'm making product and design minimal modern</p>
 
           <div className="social-icons">
             <Social />
@@ -44,9 +44,9 @@ export default function Header() {
       <div className="app__header-sContainer">
         <div className="tags-container">
           <div className="tags-1"><span>*</span></div>
-          <div className="tags-2"><span>Web desiner</span></div>
+          <div className="tags-2"><span>Evay desiner</span></div>
           <br />
-          <div className="tags-3"><span>Web developer</span></div>
+          <div className="tags-3"><span>Wordpress developer</span></div>
           <div className="tags-4"><span>Content writer</span></div>
           <div className="tags-5"><span>UI Designer</span></div>
           <div className="tags-6"><span>Shopify expert</span></div>
@@ -54,9 +54,9 @@ export default function Header() {
 
         <div className="contact-info">
           <span>*HIRE ME!</span>
-          <h1>Korea, Busan
-            hi@domainexample.com
-            +850 123 4567 890</h1>
+          <h1>Bangladesh, Chattogram
+          rimonahsantvi@gmail.com
+            +880 1812-792321</h1>
         </div>
 
         <div className="rounded-img">

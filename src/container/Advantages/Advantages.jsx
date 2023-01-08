@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Advantages.scss';
 
 import { images } from '../../constrants/index';
-import { FaEbay } from 'react-icons/fa';
+
 
 
 export default function Advantages() {
@@ -33,6 +33,24 @@ export default function Advantages() {
     }
   ]
 
+  const [style, setStyle] = useState({});
+  var [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (count < 100) {
+        console.log(count);
+        const newProgress = {
+          opacity: 1,
+          width: `${count + 1}%`
+        };
+        setStyle(newProgress);
+        setCount(count + 1);
+      }
+    }, 50);
+    return () => clearInterval(interval);
+  }, [count]);
+
   return (
     <div>
 
@@ -44,7 +62,14 @@ export default function Advantages() {
             <h1>{item.title}
               <img src={item.img} alt="" />
             </h1>
+
+            <div class="progress">
+              <div class="progress-done" style={style}>
+                {count}%
+              </div>
+            </div>
           </div>
+
         )}
       </div>
 
