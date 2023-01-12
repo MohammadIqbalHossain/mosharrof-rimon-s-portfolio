@@ -7,6 +7,7 @@ import Contact from './container/Contact/Contact';
 import Portfolio from './Pages/Portfolio/Portfolio';
 import Pricing from './container/Pricing/Pricing';
 import NotFound from './container/NotFound/NotFound';
+import Accordion from './container/Accordion/Accordion';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/pricing' element={<Pricing />} />
+        <Route path='/faq' element={<Accordion />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
 

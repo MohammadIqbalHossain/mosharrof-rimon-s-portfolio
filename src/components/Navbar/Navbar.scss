@@ -307,4 +307,13 @@ nav {
     }
 }
 
+.navbar-dropdown {
+    height: 0;
+    overflow: hidden;
+}
+
+.is-active {
+    height: 40px;
+}
+
 /* Navabar  */

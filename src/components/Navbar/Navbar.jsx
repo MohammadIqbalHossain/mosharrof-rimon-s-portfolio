@@ -10,7 +10,8 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
 
-    const [navOpen, setNavOpen] = useState(false)
+    const [navOpen, setNavOpen] = useState(false);
+    const [dropdown, setDropdown] = useState(false);
 
 
     return (
@@ -35,15 +36,15 @@ export default function Navbar() {
                         <Link to="/">Service</Link>
                     </li>
                     <li>
+                        <div className="">
+                            <Link className="navbar-link" onClick={() => setDropdown(!dropdown)}>Pricing</Link>
 
-                        <select name="" id="">
-                            <option value="pricing">
-                                <Link to="/pricing">Pricing</Link>
-                            </option>
-                            <option value="Faq">
-                                <Link to="/faq">FaQ</Link>
-                            </option>
-                        </select>
+                            <div className={dropdown ? "is-active" : "navbar-dropdown"}>
+                                <Link to="/faq" className="navbar-item">FaQ</Link>
+
+                                <Link to="/pricing" className="navbar-item" >Pricing</Link>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <Link to="/contact">Contact</Link>
