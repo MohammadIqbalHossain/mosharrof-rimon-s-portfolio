@@ -35,7 +35,15 @@ export default function Navbar() {
                         <Link to="/">Service</Link>
                     </li>
                     <li>
-                        <Link to="/">Page</Link>
+
+                        <select name="" id="">
+                            <option value="pricing">
+                                <Link to="/pricing">Pricing</Link>
+                            </option>
+                            <option value="Faq">
+                                <Link to="/faq">FaQ</Link>
+                            </option>
+                        </select>
                     </li>
                     <li>
                         <Link to="/contact">Contact</Link>
