@@ -4,6 +4,7 @@ import './Navbar.scss';
 import { images } from '../../constrants';
 import GlobalButton from '../GlobalButton/GlobalButton';
 import { HiMenuAlt4 } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 
 
@@ -25,19 +26,19 @@ export default function Navbar() {
                 {/* <!-- links --> */}
                 <ul className={navOpen ? "show-links" : "links"}>
                     <li>
-                        <a href="#">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <Link to="/">Portfolio</Link>
                     </li>
                     <li>
-                        <a href="#">Service</a>
+                        <Link to="/">Service</Link>
                     </li>
                     <li>
-                        <a href="#">Page</a>
+                        <Link to="/">Page</Link>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
                 {/* <!-- signup | login --> */}

@@ -9,45 +9,46 @@ export default function Advantages() {
   const advantageObj = [
     {
       title: "HTML",
-      img: images.htmlIcon
+      img: images.htmlIcon,
+      count: 50
     },
     {
       title: "Wordpress",
-      img: images.wordpress
+      img: images.wordpress,
+      count: 50
     },
     {
       title: "Elementor",
-      img: images.elementor
+      img: images.elementor,
+      count: 50
     },
     {
       title: "Ebay",
-      img: images.ebay
+      img: images.ebay,
+      count: 50
     },
     {
       title: "JavaScript",
-      img: images.js
+      img: images.js,
+      count: 50
     },
     {
       title: "CSS",
-      img: images.css
+      img: images.css,
+      count: 50
     }
   ]
 
-  const [style, setStyle] = useState({});
+  // const [style, setStyle] = useState({});
   var [count, setCount] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (count < 100) {
         console.log(count);
-        const newProgress = {
-          opacity: 1,
-          width: `${count + 1}%`
-        };
-        setStyle(newProgress);
         setCount(count + 1);
       }
-    }, 50);
+    }, 200);
     return () => clearInterval(interval);
   }, [count]);
 
@@ -61,15 +62,12 @@ export default function Advantages() {
           <div key={index} className="advItems">
             <h1>{item.title}
               <img src={item.img} alt="" />
-            </h1>
-
-            <div class="progress">
-              <div class="progress-done" style={style}>
+              <div class="progress-done">
                 {count}%
               </div>
-            </div>
-          </div>
+            </h1>
 
+          </div>
         )}
       </div>
 
