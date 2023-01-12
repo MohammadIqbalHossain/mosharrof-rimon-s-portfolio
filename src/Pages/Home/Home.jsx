@@ -10,7 +10,7 @@ import {
     Testimonial,
     Work,
 }
-    from '../container/index';
+    from '../../container/index';
 
 function Home() {
     return (

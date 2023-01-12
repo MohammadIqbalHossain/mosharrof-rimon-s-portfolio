@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import './Work.scss';
 
@@ -12,15 +13,15 @@ function Work() {
         <h1>Please visit my projects</h1>
         <div class="grid">
           <div class="item">
-            <a href="https://moskbite.com/products/children-double-bed-bunk-sleeper" target="_blank" class="item__details">
+            <Link to="https://moskbite.com/products/children-double-bed-bunk-sleeper" target="_blank" class="item__details">
               Moskbite Shop
-            </a>
+            </Link>
           </div>
-          <a href="https://moskbite.com/products/children-double-bed-bunk-sleeper" target="_blank" class="item item--large">
+          <Link to="https://moskbite.com/products/children-double-bed-bunk-sleeper" target="_blank" class="item item--large">
             <span class="item__details">
               Moskbite shop
             </span>
-          </a>
+          </Link>
           <div class="item item--medium">
             <div class="item__details">
               sesame snaps chocolate
