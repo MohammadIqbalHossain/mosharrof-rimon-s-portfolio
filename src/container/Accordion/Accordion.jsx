@@ -1,42 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Accordion.scss';
+import DisplayAccordion from './DisplayAccordion';
 
 function Accordion() {
+
+    const accordionData = [
+        {
+            title: 'Section 1',
+            content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+          laborum cupiditate possimus labore, hic temporibus velit dicta earum
+          suscipit commodi eum enim atque at? Et perspiciatis dolore iure
+          voluptatem.`
+        },
+        {
+            title: 'Section 2',
+            content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
+          reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
+          quaerat iure quos dolorum accusantium ducimus in illum vero commodi
+          pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
+          quidem maiores doloremque est numquam praesentium eos voluptatem amet!
+          Repudiandae, mollitia id reprehenderit a ab odit!`
+        },
+        {
+            title: 'Section 3',
+            content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
+          quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
+          dolor ut sequi minus iste? Quas?`
+        }
+    ];
+
     return (
         <div>
-            <div class="container">
-                <h2>Frequently Asked Questions</h2>
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
-                        <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
-                        <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
-                        <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
-                        <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
-                        <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                        </div>
-                    </div>
+            <div>
+                <h1>React Accordion Demo</h1>
+                <div className="accordion">
+                    {accordionData.map(({ title, content }) => (
+                        <DisplayAccordion title={title} content={content} />
+                    ))}
                 </div>
             </div>
         </div>
