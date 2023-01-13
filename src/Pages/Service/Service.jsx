@@ -3,6 +3,8 @@ import './Service.scss';
 import { FaGreaterThan } from 'react-icons/fa';
 import ServiceFeature from '../../components/ServiceFeature/ServiceFeature';
 import Tools from '../../components/Tools/Tools';
+import { Feature, Footer } from '../../container';
+import Accordion from '../../container/Accordion/Accordion';
 
 function Service() {
   return (
@@ -20,7 +22,11 @@ function Service() {
       <div>
         <ServiceFeature />
         <Tools />
+        <Feature />
+        <Accordion />
       </div>
+
+       <Footer />
     </div>
   )
 }
