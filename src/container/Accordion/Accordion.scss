@@ -1,13 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
 
-// body {
-//   font-family: Verdana, Geneva, Tahoma, sans-serif;
-//   font-size: 20px;
-//   background: rgb(238, 174, 202);
-//   background: radial-gradient(circle,
-//       rgba(238, 174, 202, 1) 0%,
-//       rgba(199, 233, 148, 1) 100%);
-// }
+$bg: #fff;
+$text: #7288a2;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: #03b5d2;
 
 h1 {
   text-align: center;
@@ -24,11 +22,11 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
-  background-color: #21aeca;
+  background-color: #f0f2f3;
 }
 
 .accordion-title:hover {
-  background-color: #3ab4cc;
+  background-color: #dadfe0;
 }
 
 .accordion-title,
@@ -37,7 +35,7 @@ h1 {
 }
 
 .accordion-content {
-  background-color: #39b9d2;
+  background-color: #f8f8f8;
 }
 
 @media screen and (max-width: 700px) {
