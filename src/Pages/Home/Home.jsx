@@ -22,6 +22,7 @@ function Home() {
             <Work />
             <Testimonial />
             <Footer />
+         
         </div>
     )
 }

@@ -179,14 +179,18 @@ nav {
 }
 
 .links a {
-    color: var(--clr-grey-3);
-    font-size: 0.9rem;
-    text-transform: capitalize;
-
     display: block;
     padding: 0.5rem 1rem;
     transition: var(--transition);
     margin: 0rem, 2rem;
+
+    border: none;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 15.4px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .links a:hover {
@@ -307,13 +311,28 @@ nav {
     }
 }
 
-.navbar-dropdown {
-    height: 0;
-    overflow: hidden;
+.nav-btn {
+    display: block;
+    
+    transition: var(--transition);
+   
+    border: none;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 15.4px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+
+ 
+ 
 }
 
-.is-active {
-    height: 40px;
-}
+
+
+
+
+
+
 
 /* Navabar  */

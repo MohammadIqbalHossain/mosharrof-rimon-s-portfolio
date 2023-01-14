@@ -5,6 +5,14 @@ import { images } from '../../constrants';
 import GlobalButton from '../GlobalButton/GlobalButton';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
+import Dropdown from '../Dropdown/Dropdown';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import {
+    RiArrowDropDownLine
+} from 'react-icons/ri';
+
+
 
 
 
@@ -13,6 +21,23 @@ export default function Navbar() {
     const [navOpen, setNavOpen] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
+    const propData = [
+        {
+            path: "faq",
+            title: "FaQ"
+        },
+        {
+            path: "pricing",
+            title: "Pricing"
+        },
+        {
+            path: "*",
+            title: "404"
+        }
+    ]
+
+
+    // const style = { color: "Black", fontSize: "2em", display:"Flex", alignItems: "Center", flexDirection: "column", border: "Blue" }
 
     return (
         <nav id="nav">
@@ -27,27 +52,30 @@ export default function Navbar() {
                 {/* <!-- links --> */}
                 <ul className={navOpen ? "show-links" : "links"}>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link className="nav-link" to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/portfolio">Portfolio</Link>
+                        <Link className="nav-link" to="/portfolio">Portfolio</Link>
                     </li>
                     <li>
-                        <Link to="/service">Service</Link>
+                        <Link className="nav-link" to="/service">Service</Link>
                     </li>
                     <li>
-                        <div className="">
-                            <Link className="navbar-link" onClick={() => setDropdown(!dropdown)}>Pricing</Link>
+                        <Popup
+                            trigger={<button className="nav-btn">
+                                Trigger
+                                <RiArrowDropDownLine size="15px" />
+                            </button>}
+                            position="bottom center">
 
-                            <div className={dropdown ? "is-active" : "navbar-dropdown"}>
-                                <Link to="/faq" className="navbar-item">FaQ</Link>
+                            <div>
+                                <Dropdown propsData={propData} />
 
-                                <Link to="/pricing" className="navbar-item" >Pricing</Link>
                             </div>
-                        </div>
+                        </Popup>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link className="nav-link" to="/contact">Contact</Link>
                     </li>
                 </ul>
                 {/* <!-- signup | login --> */}
