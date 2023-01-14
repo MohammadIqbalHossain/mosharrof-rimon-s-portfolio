@@ -37,7 +37,7 @@ export default function Navbar() {
     ]
 
 
-    // const style = { color: "Black", fontSize: "2em", display:"Flex", alignItems: "Center", flexDirection: "column", border: "Blue" }
+    const style = { color: "Black", fontSize: "3em", }
 
     return (
         <nav id="nav">
@@ -64,13 +64,12 @@ export default function Navbar() {
                         <Popup
                             trigger={<button className="nav-btn">
                                 Trigger
-                                <RiArrowDropDownLine size="15px" />
+                                <RiArrowDropDownLine />
                             </button>}
                             position="bottom center">
 
                             <div>
-                                <Dropdown propsData={propData} />
-
+                                <Dropdown propsData={propData} size={"15"} style={style}/>
                             </div>
                         </Popup>
                     </li>
@@ -83,6 +82,7 @@ export default function Navbar() {
                     <GlobalButton children={"Hire!"} />
                 </ul>
             </div>
+            <hr />
         </nav>
     )
 }

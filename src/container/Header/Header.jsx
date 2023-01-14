@@ -10,18 +10,18 @@ export default function Header() {
 
       <div className="app__header-container">
         <div className="app__header-content">
-          <h1>Evay &<br />  Shopify <br /> Expert</h1>
+          <h1>Evay & Shopify Expert</h1>
           <img src={images.zigzag} alt="zigzagImage" />
           <div className="app__owner-experiance">
             <div>
-              <h1>3</h1>
+              <h1>5</h1>
               <p>YEARS OF <br />
                 EXPERIENCE</p>
             </div>
 
             <div>
-              <h1>78</h1>
-              <p>Projecys <br /> Done</p>
+              <h1>500+</h1>
+              <p>Projects <br /> Done</p>
             </div>
           </div>
         </div>

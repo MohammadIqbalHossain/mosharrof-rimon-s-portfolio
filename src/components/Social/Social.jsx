@@ -14,16 +14,16 @@ function Social() {
         <div>
             <ul className="app__social">
                 <li>
-                    <a href="#"><FaTiktok /></a>
+                    <a href="#" className="glow-on-hover"><FaTiktok /></a>
                 </li>
                 <li>
-                    <a href="#"><BsBehance /></a>
+                    <a href="#" className="glow-on-hover"><BsBehance /></a>
                 </li>
                 <li>
-                    <a href="#"><AiFillInstagram /></a>
+                    <a href="#" className="glow-on-hover"><AiFillInstagram /></a>
                 </li>
                 <li>
-                    <a href="#"><AiOutlineDribbble /></a>
+                    <a href="#" className="glow-on-hover"><AiOutlineDribbble /></a>
                 </li>
             </ul>
         </div>
