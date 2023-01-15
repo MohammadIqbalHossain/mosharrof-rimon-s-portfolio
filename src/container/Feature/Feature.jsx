@@ -21,7 +21,7 @@ export default function Feature() {
           <h1>Feature Two</h1>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry and has been the industry standard dummy</p>
         </div>
-        <div>
+        <div className="img-order">
           <img src={images.feature2} alt="feature1" />
         </div>
       </div>
