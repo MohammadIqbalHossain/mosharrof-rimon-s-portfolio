@@ -1,0 +1,74 @@
+.expTitle {
+  font-family: "Amiri", serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+.expContainer {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  .expContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.degree {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.degree small {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  margin: 5px;
+  line-height: 15.4px;
+  font-weight: 400px;
+}
+.degree span {
+  font-size: 25px;
+  font-family: "Amiri", serif;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+@media screen and (max-width: 700px) {
+  .degree {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .degree small {
+    font-size: 10px;
+    text-align: center;
+  }
+  .degree span {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+.institute {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.institute span {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  margin: 5px;
+  line-height: 15.4px;
+  font-weight: 400px;
+}
+
+.hr-line {
+  margin: 20px 0;
+}/*# sourceMappingURL=Experience.css.map */

@@ -1,0 +1,15 @@
+.dropdown-container {
+  padding: 10px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link-item {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 15.4px;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(10, 8, 8);
+}/*# sourceMappingURL=Dropdown.css.map */

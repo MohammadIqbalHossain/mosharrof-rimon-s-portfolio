@@ -1,77 +1,80 @@
-import React from 'react'
-import './Testimonial.scss';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Testimonial.css";
+import { RxAvatar } from 'react-icons/rx'
+import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
 
-function Testimonial() {
+
+const PreviousBtn = (props) => {
+  console.log(props);
+  const { className, onClick } = props;
   return (
-    <div class="header">
-      <div class="container">
-        <div class="slider">
-          <div class="testimonal" id="testimonal-1">
-            <div class="img">
-              <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="" class="user" />
-            </div>
-            <div class="item-content">
-              <h3>Lorem name</h3>
-              <div class="twitter"><small>@loremname <i class="fab fa-twitter"></i></small></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo dolorem possimus
-                delectus sint modi! Minima omnis exercitationem nemo ea.</p>
-            </div>
-          </div>
-          <div class="testimonal" id="testimonal-2">
-            <div class="img">
-              <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="" class="user" />
-            </div>
-            <div class="item-content">
-              <h3>Lorem name</h3>
-              <div class="twitter"><small>@loremname <i class="fab fa-twitter"></i></small></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo dolorem possimus
-                delectus sint modi! Minima omnis exercitationem nemo ea.</p>
-            </div>
-          </div>
-          <div class="testimonal" id="testimonal-3">
-            <div class="img">
-              <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="" class="user" />
-            </div>
-            <div class="item-content">
-              <h3>Lorem name</h3>
-              <div class="twitter"><small>@loremname <i class="fab fa-twitter"></i></small></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo dolorem possimus
-                delectus sint modi! Minima omnis exercitationem nemo ea.</p>
-            </div>
-          </div>
-          <div class="testimonal" id="testimonal-4">
-            <div class="img">
-              <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="" class="user" />
-            </div>
-            <div class="item-content">
-              <h3>Lorem name</h3>
-              <div class="twitter"><small>@loremname <i class="fab fa-twitter"></i></small></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo dolorem possimus
-                delectus sint modi! Minima omnis exercitationem nemo ea.</p>
-            </div>
-          </div>
-          <div class="testimonal" id="testimonal-5">
-            <div class="img">
-              <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="" class="user" />
-            </div>
-            <div class="item-content">
-              <h3>Lorem name</h3>
-              <div class="twitter"><small>@loremname <i class="fab fa-twitter"></i></small></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo dolorem possimus
-                delectus sint modi! Minima omnis exercitationem nemo ea.</p>
-            </div>
-          </div>
-        </div>
-        <div class="slider-btn">
-          <a href="#testimonal-1"><span class="dot"></span></a>
-          <a href="#testimonal-2"><span class="dot"></span></a>
-          <a href="#testimonal-3"><span class="dot"></span></a>
-          <a href="#testimonal-4"><span class="dot"></span></a>
-          <a href="#testimonal-5"><span class="dot"></span></a>
-        </div>
+    <div className={className} onClick={onClick}>
+      <MdArrowBackIosNew style={{ color: "gray", fontSize: "45px" }} />
+    </div>
+  );
+};
+const NextBtn = (props) => {
+  const { className, onClick } = props;
+  return (
+    <div className={className} onClick={onClick}>
+      <MdArrowForwardIos style={{ color: "gray", fontSize: "45px" }} />
+    </div>
+  );
+};
+const Testimonial = () => {
+  return (
+    <div
+      className="testimonial"
+      style={{ display: "flex", justifyContent: "center", marginTop: 50 }}
+    >
+      <div style={{ width: "50%", textAlign: "center" }}>
+        <h1 style={{ marginBottom: 20 }}>TESTIMONIALS</h1>
+        <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
+          <Card img="https://www.tutorialrepublic.com/examples/images/clients/1.jpg" />
+          <Card img="https://www.tutorialrepublic.com/examples/images/clients/2.jpg" />
+          <Card img="https://www.tutorialrepublic.com/examples/images/clients/3.jpg" />
+        </Slider>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Testimonial
+const Card = ({ img }) => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        textAlign: "center",
+        color: "gray",
+      }}
+    >
+      <RxAvatar
+        imgProps={{ style: { borderRadius: "50%" } }}
+        src={img}
+        style={{
+          width: 120,
+          height: 120,
+          border: "1px solid lightgray",
+          padding: 7,
+          marginBottom: 20,
+        }}
+      />
+      <p>
+        Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia.
+        Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan
+        tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt
+        fringilla massa. Etiam hendrerit dolor eget rutrum
+      </p>
+      <p style={{ fontStyle: "italic", marginTop: 25 }}>
+        <span style={{ fontWeight: 500, color: "green" }}>PAULA WILSON</span> ,
+        Media Analyst
+      </p>
+    </div>
+  );
+};
+
+export default Testimonial;

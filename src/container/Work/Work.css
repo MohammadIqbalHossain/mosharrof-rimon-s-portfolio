@@ -1,13 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700');
-
-$white: #fff;
-$black: #2e2e2e;
-$gray: #787878;
-$highlight: #ea8478;
-$footer: #f7f7f7;
-
-.hot-title{
-  font-family: 'Amiri', serif;
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
+.hot-title {
+  font-family: "Amiri", serif;
   font-size: 44px;
   font-weight: 500;
   line-height: 40px;
@@ -17,8 +10,9 @@ $footer: #f7f7f7;
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
-  @media screen and (max-width: 450px) {
+}
+@media screen and (max-width: 450px) {
+  .grid {
     grid-template-columns: repeat(1, 1fr);
     margin: 0 3rem;
   }
@@ -34,27 +28,23 @@ $footer: #f7f7f7;
   height: 500px;
   cursor: pointer;
   overflow: hidden;
-
-  &:hover .img-content-hover {
-    display: block;
-  }
 }
-
-
+.img-container-w:hover .img-content-hover {
+  display: block;
+}
 
 .img {
   width: 100%;
   height: 500px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   cursor: pointer;
   transform: scale(1);
   transition: all 0.3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 }
-
+.img:hover {
+  transform: scale(1.05);
+}
 
 .img-content-hover {
   z-index: 1;
@@ -63,8 +53,8 @@ $footer: #f7f7f7;
   left: 30%;
   white-space: nowrap;
   display: none;
-  padding: .8rem;
-  background: $white;
+  padding: 0.8rem;
+  background: #fff;
   font-weight: 400;
   margin-top: 1.25rem;
   margin-left: -2rem;
@@ -72,14 +62,14 @@ $footer: #f7f7f7;
 }
 
 .title {
-  color: $black;
+  color: #2e2e2e;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .category {
   font-size: 1rem;
-  color: $gray;
+  color: #787878;
 }
 
 .img-content {
@@ -91,21 +81,18 @@ $footer: #f7f7f7;
     grid-gap: 1rem;
   }
 }
-
 @media screen and (max-width: 1024px) {
   img:hover {
     transform: none;
   }
-  
   .img-container-w {
     height: 100%;
-    &:hover .img-content-hover {
-      display: none;
-    }
   }
-
+  .img-container-w:hover .img-content-hover {
+    display: none;
+  }
   .img-content {
     display: block;
     padding: 1rem 0;
   }
-}
+}/*# sourceMappingURL=Work.css.map */

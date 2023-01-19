@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Advantages.scss';
-
 import { images } from '../../constrants/index';
-import { useAsyncValue } from 'react-router-dom';
-
-
 
 export default function Advantages() {
   const advantageObj = [
@@ -26,7 +22,7 @@ export default function Advantages() {
     {
       title: "Ebay",
       img: images.ebay,
-      count: 50
+      count: 89
     },
     {
       title: "JavaScript",
@@ -36,29 +32,31 @@ export default function Advantages() {
     {
       title: "CSS",
       img: images.css,
-      count: 50
+      count: 78
     }
   ]
 
   // const [style, setStyle] = useState({});
   var [count, setCount] = useState(0);
+  console.log(count);
 
+  const integer = advantageObj.map(int => int.count);
+  console.log(integer)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (count < getCount) {
-        setCount(count + 1);
-      }
-
+      for (let i = 0; i < integer.length; i++) {
+        if (count < integer[i]) {
+          setCount(count + 1);
+        }
+      };
     }, 50);
     return () => clearInterval(interval);
-  }, [count]);
+  }, []);
 
   return (
     <div>
-
       <h1 className="section-title">Advantages</h1>
-
       <div className="advContainer">
         {advantageObj.map((item, index) =>
           <div key={index} className="advItems">
@@ -69,11 +67,9 @@ export default function Advantages() {
               </div>
               {item.title}
             </h1>
-
           </div>
         )}
       </div>
-
     </div>
   )
 }

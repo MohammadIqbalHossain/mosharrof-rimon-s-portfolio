@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid slategray;
+}
+.service-item img {
+  width: 50px;
+}
+.service-item h1 {
+  font-family: "Amiri", serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 500;
+  padding: 20px;
+  margin: 0;
+}
+.service-item p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Amiri", serif;
+  color: rgb(0, 0, 0);
+}/*# sourceMappingURL=ServiceFeature.css.map */
