@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Advantages.scss';
 
 import { images } from '../../constrants/index';
+import { useAsyncValue } from 'react-router-dom';
 
 
 
@@ -42,29 +43,31 @@ export default function Advantages() {
   // const [style, setStyle] = useState({});
   var [count, setCount] = useState(0);
 
+
   useEffect(() => {
     const interval = setInterval(() => {
-      if (count < 100) {
-        console.log(count);
+      if (count < getCount) {
         setCount(count + 1);
       }
-    }, 200);
+
+    }, 50);
     return () => clearInterval(interval);
   }, [count]);
 
   return (
     <div>
 
-      <h1>Advantages</h1>
+      <h1 className="section-title">Advantages</h1>
 
       <div className="advContainer">
         {advantageObj.map((item, index) =>
           <div key={index} className="advItems">
-            <h1>{item.title}
+            <h1>
               <img src={item.img} alt="" />
               <div class="progress-done">
-                {count}%
+                <span className="progress-count">{count}%</span>
               </div>
+              {item.title}
             </h1>
 
           </div>
