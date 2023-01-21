@@ -3,56 +3,80 @@ import './Advantages.scss';
 import { images } from '../../constrants/index';
 
 export default function Advantages() {
+
+  const [htmlCount, setHtmlCount] = useState(0);
+  const [wordpressCount, setWordpressCount] = useState(0);
+  const [elementorCount, setElementorCount] = useState(0);
+  const [ebayCount, setEbayCount] = useState(0);
+  const [javaScriptCount, setJavaScriptCount] = useState(0);
+  const [cssCount, setCssCount] = useState(0);
+
+
   const advantageObj = [
     {
       title: "HTML",
       img: images.htmlIcon,
-      count: 50
+      count: 50,
+      stateVar: htmlCount,
     },
     {
       title: "Wordpress",
       img: images.wordpress,
-      count: 50
+      count: 50,
+      stateVar: wordpressCount,
     },
     {
       title: "Elementor",
       img: images.elementor,
-      count: 50
+      count: 50,
+      stateVar: elementorCount,
     },
     {
       title: "Ebay",
       img: images.ebay,
-      count: 89
+      count: 89,
+      stateVar: ebayCount
     },
     {
       title: "JavaScript",
       img: images.js,
-      count: 50
+      count: 50,
+      stateVar: javaScriptCount
     },
     {
       title: "CSS",
       img: images.css,
-      count: 78
+      count: 78,
+      stateVar: cssCount
     }
   ]
-
-  // const [style, setStyle] = useState({});
-  var [count, setCount] = useState(0);
-  console.log(count);
 
   const integer = advantageObj.map(int => int.count);
   console.log(integer)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      for (let i = 0; i < integer.length; i++) {
-        if (count < integer[i]) {
-          setCount(count + 1);
-        }
-      };
+      if (htmlCount < 90) {
+        setHtmlCount(htmlCount + 1);
+      }
+      if (wordpressCount < 97) {
+        setWordpressCount(wordpressCount + 1)
+      }
+      if (ebayCount < 98) {
+        setEbayCount(ebayCount + 1);
+      }
+      if (elementorCount < 96) {
+        setElementorCount(elementorCount + 1);
+      }
+      if (javaScriptCount < 75) {
+        setJavaScriptCount(javaScriptCount + 1);
+      }
+      if (cssCount < 89) {
+        setCssCount(cssCount + 1);
+      }
     }, 50);
     return () => clearInterval(interval);
-  }, []);
+  }, [htmlCount, wordpressCount, cssCount, javaScriptCount, elementorCount, ebayCount]);
 
   return (
     <div>
@@ -63,7 +87,7 @@ export default function Advantages() {
             <h1>
               <img src={item.img} alt="" />
               <div class="progress-done">
-                <span className="progress-count">{count}%</span>
+                <span className="progress-count">{item.stateVar}%</span>
               </div>
               {item.title}
             </h1>
