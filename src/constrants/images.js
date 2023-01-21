@@ -16,6 +16,7 @@ import zigzag from '../assets/zigzag-line.gif';
 import shofipy from '../assets/shopify-logo.png';
 import ebay from '../assets/evay.png';
 import css from '../assets/css.png';
+import js from '../assets/js.png';
 import projects1 from '../assets/project-1.png';
 import projects2 from '../assets/project-2.png';
 import projects3 from '../assets/project-3.png';
@@ -44,7 +45,7 @@ export default {
     shofipy,
     ebay,
     css,
-    // js,
+    js,
     projects1,
     projects2,
     projects3,

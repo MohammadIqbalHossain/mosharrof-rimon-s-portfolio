@@ -1,48 +1,44 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { images } from '../../constrants';
-
-
 import './Work.scss';
 
 function Work() {
-
   const workData = [
     {
-      img: "https://source.unsplash.com/8b1cWDyvT7Y",
-      title: "Smart Watch",
-      category: "Showcase",
+      img: "https://sceptermarketing.com/wp-content/uploads/2018/03/64439-big.jpg",
+      title: "Tzupa",
+      category: "Home for Jewelleries",
+      link: "https://tzufa.com/"
+    },
+    {
+      img: "https://149842033.v2.pressablecdn.com/wp-content/uploads/2019/10/free-fashion-website-templates-1000x750.jpg",
+      title: "Sammys natuarals",
+      category: "SHOP THE COLLECTION",
+      link: "https://adynelcreations.myshopify.com/"
+    },
+    {
+      img: "https://sgwebpartners.com/wp-content/uploads/2019/04/woocommerce-wholesale-storm-creek-983x553.jpg",
+      title: "Denoze",
+      category: "Shop smarter, not harder",
+      link: "https://www.denoz.de/"
+    },
+    {
+      img: "https://assets.awwwards.com/awards/submissions/2018/12/5c07cf1e427d3.png",
+      title: "Modelmaniquin",
+      category: "Elevate your style, Express yourself.",
       link: "https://modelmannequin.com/"
     },
     {
-      img: "https://source.unsplash.com/5VXH4RG88gc",
-      title: "Smart Watch",
+      img: "https://img.freepik.com/free-psd/e-commerce-furniture-landing-page_197582-336.jpg?w=2000",
+      title: "Bite into the best, Moskbite",
       category: "Showcase",
-      link: "https://modelmannequin.com/"
+      link: "https://moskbite.com/products/children-double-bed-bunk-sleeper"
     },
     {
-      img: "https://source.unsplash.com/8b1cWDyvT7Y",
-      title: "Smart Watch",
-      category: "Showcase",
-      link: "https://modelmannequin.com/"
-    },
-    {
-      img: "https://source.unsplash.com/8b1cWDyvT7Y",
-      title: "Smart Watch",
-      category: "Showcase",
-      link: "https://modelmannequin.com/"
-    },
-    {
-      img: "https://source.unsplash.com/8b1cWDyvT7Y",
-      title: "Smart Watch",
-      category: "Showcase",
-      link: "https://modelmannequin.com/"
-    },
-    {
-      img: "https://i0.wp.com/themes.svn.wordpress.org/kadence/1.1.31/screenshot.png?w=572&strip=all",
-      title: "Smart Watch not",
-      category: "Showcase not",
-      link: "https://modelmannequin.com/"
+      img: "https://cdn.dribbble.com/users/4053754/screenshots/17542177/video.png?compress=1&resize=400x300",
+      title: "MVapeFans",
+      category: "Smoothly switch to vaping, with us.",
+      link: "https://mvapefans.com/"
     }
   ]
 
@@ -59,8 +55,8 @@ function Work() {
 
   return (
     <section className="gallery">
+      <h1 className="section-title">Latest works</h1>
       <div className="container">
-        <h1 className="hot-title">Latest works</h1>
         <div className="grid" >
           {workData.map((item, index) =>
             <a target="__Blank" href={item.link} class="color-overlay" onMouseEnter={showImgContent}>

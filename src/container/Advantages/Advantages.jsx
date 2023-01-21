@@ -74,7 +74,7 @@ export default function Advantages() {
       if (cssCount < 89) {
         setCssCount(cssCount + 1);
       }
-    }, 50);
+    }, 100);
     return () => clearInterval(interval);
   }, [htmlCount, wordpressCount, cssCount, javaScriptCount, elementorCount, ebayCount]);
 
