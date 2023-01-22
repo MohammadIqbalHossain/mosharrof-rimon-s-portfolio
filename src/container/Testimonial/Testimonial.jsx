@@ -30,7 +30,7 @@ const Testimonial = () => {
       style={{ display: "flex", justifyContent: "center", marginTop: 50 }}
     >
       <div className="testimonial-container">
-        <h1 className="section-title">TESTIMONIALS</h1>
+        <h1 className="section-title">Testimonial Client</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
           <Card img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXk5bPsvFALSqWkMg8XCP1MUmHxL1BcEOObWEr4rNgCQ&s" />
           <Card img="https://www.tutorialrepublic.com/examples/images/clients/2.jpg" />
