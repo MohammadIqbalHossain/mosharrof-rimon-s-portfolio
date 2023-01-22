@@ -21,7 +21,7 @@ function Footer() {
       </div>
 
       <div className="lower-textContainer">
-        <span className="footer-upeer-text">*ELMOUS ®</span>
+        <span className="footer-upeer-text">*IQBAL ®</span>
         <h2>
           - I mistaken idea of lorem ipsum dolor mediocritatem
         </h2>

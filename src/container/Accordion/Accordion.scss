@@ -13,8 +13,12 @@ h1 {
 }
 
 .accordion {
-  max-width: 600px;
+  max-width: 700px;
   margin: 2rem auto;
+
+  @media screen and (max-width: 400px) {
+    max-width: 180px;
+  }
 }
 
 .accordion-title {
@@ -22,11 +26,17 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
-  background-color: #f0f2f3;
+  background-color: #ffffff;
+}
+.question{
+  font-family: "Aleo", serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
 }
 
 .accordion-title:hover {
-  background-color: #dadfe0;
+  background-color: #f4f5f5;
 }
 
 .accordion-title,
@@ -36,6 +46,10 @@ h1 {
 
 .accordion-content {
   background-color: #f8f8f8;
+  font-family: "Aleo", serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 700px) {

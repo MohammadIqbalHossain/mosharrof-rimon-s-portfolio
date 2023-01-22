@@ -14,9 +14,6 @@
 .align-center {
     text-align: center;
 }
-
-
-
 // Grid
 .row {
     @include clearfix;
@@ -58,6 +55,10 @@
         font-size: 36px;
         line-height: 48px;
         padding-bottom: 48px;
+    }
+
+    @media screen and (max-width: 400px) {
+        margin-top: 80%;
     }
 }
 
@@ -136,4 +137,24 @@
             text-decoration: underline;
         }
     }
+}
+
+.email-sent-message {
+    background-color: #66bb6a; /* green background color */
+    color: white; /* white text color */
+    font-size: 18px; /* larger font size */
+    font-weight: bold; /* bold text */
+    padding: 10px; /* add some padding */
+    text-align: center; /* center the text */
+    border-radius: 10px; /* add rounded corners */
+    animation: slideIn 1s ease-out; /* slide in animation */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-200%); }
+    to { transform: translateY(0%); }
 }

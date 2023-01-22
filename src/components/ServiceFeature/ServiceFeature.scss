@@ -1,8 +1,14 @@
 .container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    margin-top: 30rem;
+
+    @media screen and (max-width: 450px) {
+        margin-top: 5rem;  
+    }
 }
 
 .service-item {
@@ -19,6 +25,7 @@
 
     img {
         width: 50px;
+        object-fit: cover;
     }
 
     h1{

@@ -12,12 +12,14 @@
         align-items: center;
         justify-content: space-between;
         text-align: center;
+        color: black;
 
 
         span {
             font-family: 'Amiri', serif;
             font-weight: 500;
             font-size: 18px;
+            color: black;
         }
     }
 
@@ -28,6 +30,7 @@
         font-family: 'Amiri', serif;
         font-weight: 500;
         margin-top: 20px;
+        color: black;
     }
 
     p{
@@ -42,6 +45,10 @@
 
     img {
         padding: 20px 0;
+
+        @media  screen and (max-width: 400px) {
+            width: 380px;
+        }
     }
 
 }

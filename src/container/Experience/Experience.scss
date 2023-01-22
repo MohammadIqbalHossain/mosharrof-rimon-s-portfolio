@@ -8,6 +8,7 @@
 .expContainer {
     display: flex;
     justify-content: space-between;
+   margin: 0 50px;
 
     @media screen and (max-width: 700px) {
         flex-direction: column;
@@ -22,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
     small {
         font-size: 14px;
@@ -78,5 +80,5 @@
 }
 
 .hr-line {
-    margin: 20px 0;
+    margin: 20px 50px;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Service.scss';
 import { FaGreaterThan } from 'react-icons/fa';
 import ServiceFeature from '../../components/ServiceFeature/ServiceFeature';
@@ -7,6 +7,26 @@ import { Feature, Footer } from '../../container';
 import Accordion from '../../container/Accordion/Accordion';
 
 function Service() {
+
+  const [showSection, setShowSection] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth >= 1100) {
+        setShowSection(true);
+      } else {
+        setShowSection(false);
+      }
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div>
       <div className="title">
@@ -26,7 +46,7 @@ function Service() {
         <Accordion />
       </div>
 
-       <Footer />
+      {showSection && <Footer />}
     </div>
   )
 }
