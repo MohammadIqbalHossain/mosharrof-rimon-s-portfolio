@@ -1,5 +1,4 @@
 import React from 'react'
-import { images } from '../../constrants';
 import './Work.scss';
 
 function Work() {
@@ -56,7 +55,7 @@ function Work() {
   return (
     <section className="gallery">
       <h1 className="section-title">Latest works</h1>
-      <div className="container">
+      <div className="work-container">
         <div className="grid" >
           {workData.map((item, index) =>
             <a target="__Blank" href={item.link} class="color-overlay" onMouseEnter={showImgContent}>

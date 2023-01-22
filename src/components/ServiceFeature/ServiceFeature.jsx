@@ -31,13 +31,15 @@ function ServiceFeature() {
     return (
         <div>
             <div className="container">
-                {serviceFeatureData.map((item) => (
-                    <div className="service-item">
-                        <img src={item.icon} alt="icon" />
-                        <h1>{item.title}</h1>
-                        <p>{item.description}</p>
-                    </div>
-                ))}
+                <div className="feature-container">
+                    {serviceFeatureData.map((item) => (
+                        <div className="service-item">
+                            <img src={item.icon} alt="icon" />
+                            <h1>{item.title}</h1>
+                            <p>{item.description}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     )
