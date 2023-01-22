@@ -5,6 +5,9 @@
     font-weight: 500;
     margin: 100px 0;
 
+    @media screen and (max-width: 450px) {
+        font-size: 30px
+    }
 }
 
 .advContainer {
@@ -72,5 +75,5 @@
     line-height: 44px;
     font-weight: 500;
     font-family: 'Amiri', serif;
-    
+
 }

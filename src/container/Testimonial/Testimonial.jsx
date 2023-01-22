@@ -1,8 +1,8 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Testimonial.css";
-import { RxAvatar } from 'react-icons/rx'
+import "./Testimonial.scss";
+// import { RxAvatar } from 'react-icons/rx'
 import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
 
 
@@ -29,10 +29,10 @@ const Testimonial = () => {
       className="testimonial"
       style={{ display: "flex", justifyContent: "center", marginTop: 50 }}
     >
-      <div style={{ width: "50%", textAlign: "center" }}>
-        <h1 style={{ marginBottom: 20 }}>TESTIMONIALS</h1>
+      <div className="testimonial-container">
+        <h1 className="section-title">TESTIMONIALS</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
-          <Card img="https://www.tutorialrepublic.com/examples/images/clients/1.jpg" />
+          <Card img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXk5bPsvFALSqWkMg8XCP1MUmHxL1BcEOObWEr4rNgCQ&s" />
           <Card img="https://www.tutorialrepublic.com/examples/images/clients/2.jpg" />
           <Card img="https://www.tutorialrepublic.com/examples/images/clients/3.jpg" />
         </Slider>
@@ -43,36 +43,21 @@ const Testimonial = () => {
 
 const Card = ({ img }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-        textAlign: "center",
-        color: "gray",
-      }}
-    >
-      <RxAvatar
-        imgProps={{ style: { borderRadius: "50%" } }}
-        src={img}
-        style={{
-          width: 120,
-          height: 120,
-          border: "1px solid lightgray",
-          padding: 7,
-          marginBottom: 20,
-        }}
-      />
-      <p>
+    <div className="main-card" >
+      <div className="author-info">
+        <img className="img-style" src={img} alt="author_imgs" />
+        <p className="author-details">
+          <span className="author-name">PAULA WILSON</span> <br />
+          <span className="author-designation">Media Analyst</span>
+        </p>
+      </div>
+      <p className="review">
         Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia.
         Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan
         tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt
         fringilla massa. Etiam hendrerit dolor eget rutrum
       </p>
-      <p style={{ fontStyle: "italic", marginTop: 25 }}>
-        <span style={{ fontWeight: 500, color: "green" }}>PAULA WILSON</span> ,
-        Media Analyst
-      </p>
+
     </div>
   );
 };
