@@ -44,7 +44,7 @@ export default function Navbar() {
             <div class="nav-center">
                 {/* <!-- nav header --> */}
                 <div class="nav-header">
-                    <img src={images.logo} class="logo" alt="logo" />
+                    <img src={images.RimonLogo} class="logo" alt="logo" />
                     <button class="nav-toggle">
                         <HiMenuAlt4 onClick={() => setNavOpen(!navOpen)} />
                     </button>

@@ -5,29 +5,24 @@ export default function Experience() {
 
   const expData = [
     {
-      year: "2016",
+      year: "2018",
       institute: "RMIT UNIVERSITY",
-      degree: "Bachelor Degree of Design"
+      degree: "MSC"
     },
     {
       year: "2016",
-      institute: "RMIT UNIVERSITY",
+      institute: "University of Chittagong",
       degree: "Bachelor Degree of Design"
     },
     {
-      year: "2016",
-      institute: "RMIT UNIVERSITY",
-      degree: "Bachelor Degree of Design"
+      year: "2012",
+      institute: "Nazirhat College",
+      degree: "HSC - Higher Secondary Certificate"
     },
     {
-      year: "2016",
-      institute: "RMIT UNIVERSITY",
-      degree: "Bachelor Degree of Design"
-    },
-    {
-      year: "2016",
-      institute: "RMIT UNIVERSITY",
-      degree: "Bachelor Degree of Design"
+      year: "2010",
+      institute: "Fatikchhari coronation govt. high school.",
+      degree: "SSC - Secondary School certificate."
     },
   ]
 

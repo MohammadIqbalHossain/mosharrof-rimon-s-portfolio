@@ -45,8 +45,8 @@ function Contact() {
                 <div className="form-field col x-100 align-center">
                     <input className="submit-btn" type="submit" value="Submit" />
                 </div>
-                {emailSent ? <div className="email-sent-message" >
-                    Email sent successfully! <button onClick={clearMessage}>Clear</button>
+                {emailSent ? <div className="email-sent-message" onClick={clearMessage}>
+                    Email sent successfully! <button >Clear</button>
                 </div> : ""}
             </form>
         </section>

@@ -23,6 +23,7 @@ import projects3 from '../assets/project-3.png';
 import projects4 from '../assets/project-4.png';
 import projects5 from '../assets/project-5.png';
 import projects6 from '../assets/project-6.png';
+import RimonLogo from '../assets/Rimon-logo.png';
 
 
 
@@ -51,5 +52,6 @@ export default {
     projects3,
     projects4,
     projects5,
-    projects6
+    projects6,
+    RimonLogo
 }

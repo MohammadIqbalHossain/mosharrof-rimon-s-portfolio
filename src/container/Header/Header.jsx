@@ -10,7 +10,7 @@ export default function Header() {
 
       <div className="app__header-container">
         <div className="app__header-content">
-          <h1>Evay & Shopify Expert</h1>
+          <h1>eBay & Shopify Expert</h1>
           <img src={images.zigzag} alt="zigzagImage" />
           <div className="app__owner-experiance">
             <div>
@@ -32,7 +32,7 @@ export default function Header() {
 
         <div className="app__header-rContent">
           <div>*</div>
-          <p>I’m Rimon, an Evay & Shopify web Designer based in Bangladesh. I'm making product and design minimal modern</p>
+          <p>I’m Rimon, an eBay & Shopify web Designer based in Bangladesh. I'm making product and design minimal modern</p>
 
           <div className="social-icons">
             <Social />
@@ -44,11 +44,11 @@ export default function Header() {
       <div className="app__header-sContainer">
         <div className="tags-container">
           <div className="tags-1"><span>*</span></div>
-          <div className="tags-2"><span>Evay desiner</span></div>
+          <div className="tags-2"><span>eBay Expert</span></div>
           <br />
           <div className="tags-3"><span>Wordpress developer</span></div>
           <div className="tags-4"><span>Content writer</span></div>
-          <div className="tags-5"><span>UI Designer</span></div>
+          <div className="tags-5"><span>Project management</span></div>
           <div className="tags-6"><span>Shopify expert</span></div>
         </div>
 

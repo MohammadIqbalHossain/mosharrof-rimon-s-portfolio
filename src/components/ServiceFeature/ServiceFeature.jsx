@@ -31,7 +31,7 @@ function ServiceFeature() {
     return (
         <div>
             <div className="container">
-                <div className="feature-container">
+                <div className="serviceFeature-container">
                     {serviceFeatureData.map((item) => (
                         <div className="service-item">
                             <img src={item.icon} alt="icon" />
